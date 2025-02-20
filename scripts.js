@@ -40,3 +40,24 @@ document.getElementById("year").textContent = new Date().getFullYear();
     function scrollToSection(sectionId) {
         document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".section");
+    
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show"); // Add 'show' class when visible
+                    }
+                });
+            },
+            {
+                root: null, // viewport
+                threshold: 0.2, // Trigger when 20% of the section is visible
+            }
+        );
+    
+        sections.forEach((section) => observer.observe(section));
+    });
+    

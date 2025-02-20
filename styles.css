@@ -486,7 +486,31 @@ footer {
     cursor: pointer;
     color: #3edef4;
   }
-  
 
 
+/* Initially hide sections */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
+/* When the section is visible */
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about {
+  transform: translateX(-50px);
+}
+.about.show {
+  transform: translateX(0);
+}
+
+.project {
+  transform: scale(0.8);
+}
+.project.show {
+  transform: scale(1);
+}

@@ -94,7 +94,7 @@
       }
 }
 
-@media screen and (width: 1024px) and (height: 1366px) {
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
     .about-container {
         margin: 0;
         padding-left: 40px;
@@ -107,19 +107,19 @@
         width: 150px;
         border-radius: 8px;
     }
-    .skill{
+    .skill {
         display: block;
         position: relative;
         min-height: fit-content;
-        min-width: none;
+        min-width: auto; /* Fixed */
     }
     .about {
-    background-color: #5271ff;
-    margin: auto;
-    padding: 50px;
-    text-align: center;
-}
-    .skill ul{
+        background-color: #5271ff;
+        margin: auto;
+        padding: 50px;
+        text-align: center;
+    }
+    .skill ul {
         display: flex;
         flex-direction: column;
     }

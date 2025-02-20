@@ -93,3 +93,34 @@
         width: 100%;
       }
 }
+
+@media screen and (width: 1024px) and (height: 1366px) {
+    .about-container {
+        margin: 0;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        min-height: fit-content;
+    }
+    .about-container div img {
+        width: 150px;
+        border-radius: 8px;
+    }
+    .skill{
+        display: block;
+        position: relative;
+        min-height: fit-content;
+        min-width: none;
+    }
+    .about {
+    background-color: #5271ff;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+    .skill ul{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -94,7 +94,7 @@
       }
 }
 
-@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+@media (min-width: 820px) and (max-width: 1366px) and (orientation: portrait) {
     .about-container {
         margin: 0;
         padding-left: 40px;
@@ -111,7 +111,7 @@
         display: block;
         position: relative;
         min-height: fit-content;
-        min-width: auto; /* Fixed */
+        min-width: auto;
     }
     .about {
         background-color: #5271ff;

@@ -1,0 +1,93 @@
+
+/* Media Styling */
+@media (max-width: 768px) {
+    .navbar{
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        text-align: center;
+    }
+    .show {
+        display: flex;
+    }
+    .close-icon {
+        display: block;
+        text-align: right;
+        padding: 10px;
+    }
+    .home{
+        margin: 0;
+        background-color: #5271ff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+        padding: 200px 20px 300px 20px;
+
+    }
+    .contact-icon i{
+        font-size: 30px;
+    }
+    .about-container {
+        margin: 0;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        min-height: fit-content;
+    }
+    .about-container div img {
+        width: 150px;
+        border-radius: 8px;
+    }
+    .skill{
+        display: block;
+        position: relative;
+        min-height: fit-content;
+        min-width: none;
+    }
+    .about {
+    background-color: #5271ff;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+    .skill ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        padding: 0px;
+      }
+      .contact .container{
+        gap: 0;
+      }
+    
+      .contactForm {
+        width: 40%;
+        padding-left: 10px;
+      }
+      
+      .contactInfo{
+        padding-right: 20px;
+        min-width: fit-content;
+      }
+    
+      .contact .content h2 {
+        font-size: 28px;
+      }
+      .footer{
+        width: 100%;
+      }
+}

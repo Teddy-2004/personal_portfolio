@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfoloio</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Header Section with Naviagation -->
+    <header>
+      <nav class="navbar">
+        <label class="logo">Tedla</label>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        <ul class="menu" id="menu">
+          <span class="close-icon" onclick="toggleMenu()">×</span>
+          <li onclick="scrollToSection('home')">Home</li>
+          <li onclick="scrollToSection('about')">About</li>
+          <li onclick="scrollToSection('projects')">Projects</li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1G-3X4e3qOFdn5NcgzgEyteyULNG6b6aA1m6pS1focvE/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="who-am-i">
+        <h1>Hello,</h1>
+        <h1>I'm <span>Tedla</span></h1>
+        <h1 class="web-developer">Web Developer</h1>
+        <button onclick="scrollToSection('contact')">Contact Me</button>
+        <div class="social-media"></div>
+      </div>
+      <div class="my-photo">
+        <img src="Tedla.jpg" alt="My image" />
+      </div>
+    </section>
+
+    <!-- Social Media Links -->
+    <div class="contact-icon">
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=teddy825@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/tedla-tesfaye-138834298"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a
+        href="https://github.com/Teddy-2004"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/teddy_ccj/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <!-- About me Section -->
+    <section class="about" id="about">
+      <h1>About</h1>
+      <div class="about-container">
+        <div>
+          <img src="Tedla.jpg" alt="My Picture" />
+        </div>
+        <div>
+          <h2>I am Tedla Tesfaye</h2>
+          <p>
+            A passionate web developer from Ethiopia, currently pursuing my
+            bachelor's degree at African Leadership University. With over two
+            years of experience in front-end development, I specialize in
+            crafting intuitive and visually appealing websites using HTMML, CSS,
+            JavaScript, React and other cutting-edge technologies. I've had the
+            privilege of working with various people, delivering solutions that
+            meet user needs while aligning with business goals.
+          </p>
+
+          <!-- Skills Section -->
+          <div class="skill">
+            <h2>Technical Skills</h2>
+            <ul>
+              <li>
+                <h3>HTML</h3>
+                <span class="bar"><span class="html"></span></span>
+              </li>
+              <li>
+                <h3>CSS</h3>
+                <span class="bar"><span class="css"></span></span>
+              </li>
+              <li>
+                <h3>JavaScript</h3>
+                <span class="bar"><span class="javascript"></span></span>
+              </li>
+              <li>
+                <h3>Python</h3>
+                <span class="bar"><span class="python"></span></span>
+              </li>
+            </ul>
+            <h2>Professional Skills</h2>
+            <ul>
+              <li>
+                <h3>Leadership</h3>
+                <span class="bar"><span class="leadership"></span></span>
+              </li>
+              <li>
+                <h3>Team Work</h3>
+                <span class="bar"><span class="teamwork"></span></span>
+              </li>
+              <li>
+                <h3>Communication</h3>
+                <span class="bar"><span class="communication"></span></span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Eductaion Section -->
+          <h2>Education</h2>
+          <p>African Leadership Universit, May 2024 - now</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="project" id="projects">
+      <h1>Projects</h1>
+      <div class="project-container">
+        <!-- Each project is contained within a card -->
+        <div class="card">
+          <div class="card-header">
+            <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+            <div class="icons">
+              <a
+                href="https://github.com/Teddy-2004/submission_reminder_app_Teddy-2004.git"
+                target="_blank"
+              >
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Submissions Reminder app</h3>
+          <p>An Application that tracks the submission...</p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+            <div class="icons">
+              <a
+                href="https://github.com/teddy-cj/To-do-list.git"
+                target="_blank"
+              >
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>To-do list app</h3>
+          <p>A web app that records to-do lists</p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+            <div class="icons">
+              <a
+                href="https://github.com/teddy-cj/weather-app.git"
+                target="_blank"
+              >
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Weather app</h3>
+          <p>A weather app that shows the weather in...</p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+            <div class="icons">
+              <a href="https://github.com/Teddy-2004/mereb.git" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>RESTful API</h3>
+          <p>Created a RESTful API for Mereb Tech...</p>
+        </div>
+
+        <!-- More project cards can come here -->
+      </div>
+    </section>
+
+    <!-- contact Section -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="container">
+        <!-- Contact information section -->
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/tedla-tesfaye-138834298"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="text">
+              <h3>LinkedIn</h3>
+              <p>Tedla Tesfaye</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <a href="https://github.com/teddy-cj" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+            <div class="text">
+              <h3>Github</h3>
+              <p>@teddy-2004</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <a href="tel:+250795913669"><i class="fa fa-phone"></i></a>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+250795913669</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <a href="mailto:teddy825@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>t.godebo@alustudnt.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contactForm">
+          <form id="contact-form">
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="name" required />
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="email" name="email" required />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea name="message" required></textarea>
+              <span>Type your Message...</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footeradress">
+        <h1>Address</h1>
+        <h3>Rwanda, Kigali</h3>
+      </div>
+      <div class="footericon">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=teddy825@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tedla-tesfaye-138834298"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://github.com/teddy-cj"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/teddy_ccj/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div>&copy;<span id="year"></span> All rights reserved.</div>
+    </footer>
+
+    <!-- JavaScript File link -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
